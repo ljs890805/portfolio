@@ -1,0 +1,92 @@
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+  height: 400px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+
+.parallax_group {
+  position: relative;
+  height: 400px; /* fallback for older browsers */
+  height: 80vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax_layer {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;
+}
+
+.parallax_base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 2;
+}
+
+.parallax_1 {
+  -webkit-transform: translateZ(-300px) scale(1);
+  transform: translateZ(-300px) scale(1);
+  z-index: 3;
+}
+.parallax_2 {
+  -webkit-transform: translateZ(-600px) scale(1);
+  transform: translateZ(-600px) scale(1);
+  z-index: 4;
+}
+
+
+/* demo styles
+--------------------------------------------- */
+
+body, html {
+  overflow: hidden;
+}
+
+body {
+  font: 100% / 1.5 Arial;
+  background-color: #414042;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+
+
+/* style the groups
+--------------------------------------------- */
+
+#page1 {
+  z-index: 1;
+  background-color: #f15d58;
+}
+
+#page2 {
+  z-index: 1;
+  background-color: #dcddcd;
+}
+
+#page3 {
+  z-index: 1;
+  background-color: #a68f58;
+}
+
+#page4 {
+  z-index: 1;
+  background-color: #414042;
+}
