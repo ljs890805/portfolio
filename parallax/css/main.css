@@ -10,108 +10,52 @@ body{
 
 #page1{
   background-color: #f15d58;
-  position: relative;
-  z-index: 1;
 }
 #page2{
   background-color: #dcddcd;
-  position: relative;
-  z-index: 1;
 }
 #page3{
   background-color: #a68f58;
-  position: relative;
-  z-index: 1;
 }
 #page4{
   background-color: #414042;
-  position: relative;
-  z-index: 1;
+}
+img{
+  width: 100%;
+  height: auto;
 }
 
 .parallax {
-    height: 900px; /* fallback for older browsers */
-
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 900px;
-    perspective: 900px;
-    -webkit-perspective-origin-x: 100%;
-    perspective-origin-x: 100%;
+  height: 3600px;
 }
 
-.parallax__group {
-    position: relative;
-    height: 900px; /* fallback for older browsers */
-
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+.parallax_group {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  z-index: 1;
 }
 
-.parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transform-origin-x: 100%;
-    transform-origin-x: 100%;
+.parallax_layer {
+  position: absolute;
+  margin: 0 auto;
 }
 
-.parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 2;
+.parallax_base {
+  z-index: 2;
 }
 
 .parallax_1{
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
+  width: 960px;
+  top: 50px;
+  margin: 0 auto;
+  transform: translateY(100px) scale(10px);
   z-index: 3;
 }
 
 .parallax_2{
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
+  width: 960px;
+  top: 200px;
+  margin: 0 auto;
   z-index: 4;
-}
-/*
-.cloud1{
-  height: 146px;
-  width: 100%;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-}
-.cloud2{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-}
-.cloud3{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-}
-*/
-.mountin1{
-  height: 164px;
-  width: 100%;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  z-index: 2;
-}
-
-.wave1{
-  height: 500px;
-  width: 100%;
-  position: absolute;
-  bottom: -410px;
-  left: 0;
-  z-index: 2;
 }
