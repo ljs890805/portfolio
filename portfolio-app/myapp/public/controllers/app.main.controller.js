@@ -1,5 +1,22 @@
-myApp.controller('MainCtrl', function MainCtrl($scope) {
-	var vm = $scope.vm = {};
+(function () {
+    'use strict';
+    var moduleName = 'myApp';
 
-	vm.temp = "test";
-});
+    angular.module(moduleName).controller("MainCtrl", MainCtrl);
+
+    function MainCtrl($scope, appNavigator) {
+        var vm = $scope.vm = {};
+
+        vm.goHome = goHome;
+        vm.goSample = goSample;
+
+        function goHome () {
+            appNavigator.goToHome();
+        }
+
+        function goSample () {
+            appNavigator.goTo("sample");
+        }
+    }
+
+})();
