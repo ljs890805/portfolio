@@ -9,8 +9,8 @@
             restrict: 'AE',
             templateUrl: 'directives/sample/app.sample.sample-sample.html',
             link: function (scope, element, attrs) {
-                console.log(element);
-                console.log(attrs);
+                // console.log(element);
+                // console.log(attrs);
             }
         }
     }
