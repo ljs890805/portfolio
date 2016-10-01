@@ -1,2 +1,3 @@
-./portfolio-app/node_modules
-./portfolio-app/myapp/node_modules
+portfolio-app/node_modules/
+portfolio-app/myapp/node_modules/
+portfolio-app/myapp/.idea/
