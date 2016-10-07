@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Portfolio</title>
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/pages/home.css"/>
+</head>
+<body>
+<div id="index-wrap" data-ng-controller="MainCtrl">
+	<div ui-view></div>
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script type="text/javascript" src="app.module.js"></script>
+<script type="text/javascript" src="config/app.config.js"></script>
+<script type="text/javascript" src="config/app.route.js"></script>
+<script type="text/javascript" src="controllers/app.main.controller.js"></script>
+<script type="text/javascript" src="controllers/app.home.controller.js"></script>
+<script type="text/javascript" src="services/app.navigator.js"></script>
+<script type="text/javascript" src="directives/sample/app.sample.sample-sample.js"></script>
+</body>
+</html>

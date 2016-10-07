@@ -4,8 +4,34 @@ body,
     position: relative;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-#index-wrap {
+#index-wrap > div {
+  float: left;
+}
 
+.mainNav {
+  width: 5%;
+  height: 100%;
+  background-color: gray;
+}
+
+.thisState {
+  width: 90%;
+  height: 8%;
+  background-color: green;
+}
+
+.uiView {
+  width: 90%;
+  height: 80%;
+  background-color: blue;
+}
+
+.myGit {
+  width: 5%;
+  height: 100%;
+  background-color: yellow;
 }

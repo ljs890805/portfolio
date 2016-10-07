@@ -47,6 +47,7 @@ img{
 
 .parallax_1{
   width: 960px;
+  left: calc(50% - 480px);
   top: 50px;
   margin: 0 auto;
   transform: translateY(100px) scale(10px);
