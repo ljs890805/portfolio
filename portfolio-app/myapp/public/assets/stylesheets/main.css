@@ -6,6 +6,7 @@ body,
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
 #index-wrap > div {
@@ -13,9 +14,31 @@ body,
 }
 
 .mainNav {
+  display: table;
   width: 5%;
   height: 100%;
   background-color: gray;
+  text-align: center;
+  line-height: normal;
+}
+
+a {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  writing-mode: tb-rl;
+  vertical-align: middle;
+  color: #333;
+}
+
+.active:after {
+  display: block;
+  float: left;
+  width: 10%;
+  height: 100%;
+  background-color: pink;
 }
 
 .thisState {
@@ -31,6 +54,7 @@ body,
 }
 
 .myGit {
+  display: table;
   width: 5%;
   height: 100%;
   background-color: yellow;

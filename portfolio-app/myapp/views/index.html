@@ -10,10 +10,10 @@
 </head>
 <body>
 <div id="index-wrap" data-ng-controller="MainCtrl">
-  <div class="mainNav">MENU</div>
+  <div class="mainNav"><a href="#" ng-class="{'active': isActive}" ng-click="activeMenu()" type="button">M<br>E<br>N<br>U</a></div>
   <div class="thisState"> state </div>
 	<div class="uiView" ui-view></div>
-  <div class="myGit">MYGIT</div>
+  <div class="myGit"><a href="https://github.com/ljs890805/">MYGIT</a></div>
 </div>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>

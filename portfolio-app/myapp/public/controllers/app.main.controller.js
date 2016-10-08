@@ -18,5 +18,10 @@
             appNavigator.goTo("sample");
         }
     }
+    function ($scope) {
+    	$scope.isActive = false;
+      $scope.activeMenu = function() {
+        $scope.isActive = !$scope.isActive;
+    }
 
 })();
