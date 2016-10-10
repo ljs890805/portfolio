@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<title>Portfolio</title>
+	  <title>Portfolio</title>
     <base href="/">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
     <link rel="stylesheet" href="assets/stylesheets/main.css"/>
@@ -16,15 +16,15 @@
   <div class="mainNav">
     <p class="menuOnOff" data-ng-click="vm.some_function()">MENU</p>
   </div>
-  <div class="menu" data-ng-class="{'menuOn': vm.some_check_value}">
+  <div class="menuOff" data-ng-class="{'menuOn': vm.some_check_value}">
     <ul>
-      <li data-ng-click="vm.goProfile()">자기소개</li>
-      <li data-ng-click="vm.goResume()">이력서</li>
-      <li data-ng-click="vm.goSample()">연습작</li>
+      <li><span data-ng-click="vm.goProfile()">자기소개</span></li>
+      <li><span data-ng-click="vm.goResume()">이력서</span></li>
+      <li><span data-ng-click="vm.goSample()">연습작</span></li>
     </ul>
   </div>
-  <div class="thisState"> state </div>
-	<div ui-view class="uiView"></div>
+  <div class="sg-thisState">{{ vm.thisState }}</div>
+	<div ui-view class="mainView"></div>
   <div class="myGit"><a href="https://github.com/ljs890805/">MYGIT</a></div>
 </div>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>

@@ -8,78 +8,115 @@ body,
     padding: 0;
     font-size: 20px;
 }
-
+ul,li {
+  list-style: none;
+}
 .mainNav {
   position: absolute;
   top: 0;
   left: 0;
   width: 5%;
   height: 100%;
-  background-color: gray;
   z-index: 3;
 }
 
 .mainNav .menuOnOff {
   position: absolute;
-  top: calc(width/2-40px);
+  top: 45%;
   left: calc(5%-10px);
   transform: rotate(270deg);
   cursor: pointer;
   text-align: center;
-  color: #333;
+  color: #999;
+  font-weight: bold;
 }
 
+.mainNav .menuOnOff:hover {
+  transition: 1s all;
+  color: #000;
+}
 
-.menu {
+.menuOff {
   display: none;
   position: absolute;
   top: 8%;
-  left: 5%;
+  left: -85%;
   width: 90%;
   height: 80%;
   background-color: gray;
   text-align: center;
-  z-index: 2;
 }
-
+.menuOff ul {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menuOff li {
+  display: table;
+  height: 33.3%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.menuOff li span {
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #999;
+}
+.menuOff li span:hover {
+  color: #000;
+}
 .menuOn {
+  display: block;
   position: absolute;
   top: 8%;
-  left: 5%;
-  width: 90%;
-  height: 80%;
-  background-color: gray;
-  text-align: center;
-  z-index: 2;
+  left: -85%;
+  transition: 5s all ease;
+  transform: translateX(100%);
+  z-index: 4;
 }
 
 
-
-.thisState {
+.sg-thisState {
   position: absolute;
   top: 0;
   left: 5%;
   width: 90%;
   height: 8%;
+  text-align: center;
+  vertical-align: middle;
   background-color: green;
 }
 
-.uiView {
+.mainView {
   position: absolute;
   top: 8%;
   left: 5%;
   width: 90%;
   height: 80%;
-  background-color: blue;
-  z-index: 1;
+  z-index: 3;
 }
 
 .myGit {
   position: absolute;
   top: 0;
   right: 0;
-  display: table;
   width: 5%;
   height: 100%;
-  background-color: yellow;
+}
+
+.myGit a {
+  display: block;
+  position: absolute;
+  top:47%;
+  right: calc(5%-10px);
+  transform: rotate(90deg);
+  color: #999;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.myGit a:hover {
+  transition: 1s all;
+  color: #000;
 }
