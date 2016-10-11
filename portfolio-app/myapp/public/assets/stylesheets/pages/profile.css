@@ -12,7 +12,7 @@
 
 #profile-wrap {
   position: relative;
-  background-color: #62F35A;
+  background-color: #A9F5F2;
   width: 100%;
   height: 100%;
 }
@@ -24,6 +24,8 @@
   top: 0;
   width: 20%;
   height: 100%;
+  background-color: #A9F5F2;
+  z-index: 3;
 }
 #profile-wrap ul li {
   display: block;
@@ -38,16 +40,37 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 79%;
+  width: 80%;
   height: 100%;
-  background-color: #62F35A;
+  background-color: #A9F5F2;
+  z-index: 1;
 }
 .rightBox div {
   width: 100%;
   height: 100%;
-  background-color: gray;
-  visibility: hidden;
+  background-color: #A9F5F2;
+}
+.pro1 {
+  transition: 1s all ease;
+  transform: translateX(-100%);
+  z-index: 2;
 }
 .pro1On {
-  visibility: visible;
+  transform: translateX(0);
+}
+.pro2 {
+  transition: 1s all ease;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+.pro2On {
+  transform: translateX(0);
+}
+.pro3 {
+  transition: 1s all ease;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+.pro3On {
+  transform: translateX(0);
 }
