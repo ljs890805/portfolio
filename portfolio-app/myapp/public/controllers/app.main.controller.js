@@ -13,9 +13,6 @@
         vm.goSample = goSample;
         vm.some_function = some_function;
 
-        function thisState() {
-            return appNavigator.self;
-        }
         function goHome () {
             appNavigator.goToHome();
         }

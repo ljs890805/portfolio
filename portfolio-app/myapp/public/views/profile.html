@@ -1,3 +1,37 @@
 <div id="profile-wrap" data-ng-controller="ProfileCtrl">
-    <p>proflie</p>
+  <ul>
+    <li data-ng-click="vm.pro1_function()">기본인적사항</li>
+    <li data-ng-click="vm.pro2_function()">자기소개</li>
+    <li data-ng-click="vm.pro3_function()">성취도</li>
+  </ul>
+  <div class="rightBox">
+    <div class="pro1" data-ng-class="{'pro1On': vm.pro1_check_value}">
+      <p>
+        이름 : 이재승
+        생년월일 : 1989.07.29
+        연락처 : 010-3016-5301
+        사는곳 : 경기도 파주시 해솔로 20 해솔마을 412동 1503호
+      </p>
+    </div>
+    <div class="pro2" data-ng-class="{'pro2On': vm.pro2_check_value}">
+      <p>
+        어릴적부터 컴퓨터를 좋아하여 오피스 관련 여러 자격증을 취득하였습니다.<br>
+        명지전문대 컴퓨터전자과를 졸업하며 c언어, java, jsp등을 배웠습니다.<br><br>
+        재학기간 중 수강신청과 친구따라 해보았던 웹게임의 메크로를 만들며<br>
+        알고리즘에 남다른 감각이 있다는걸 깨달았습니다.<br><br>
+        그러나 졸업 후 전공과 관련이 없는 코레일 네트웍스에서 2년정도 근무 하였으나<br>
+        지금은 하고싶은 일에 끌려 이직을 결심하고 공부중입니다.<br>
+        목표는 프론트엔드부터 백엔드까지 전부 다룰 줄 아는 개발자 입니다.
+      </p>
+    </div>
+    <div class="pro3" data-ng-class="{'pro3On': vm.pro3_check_value}">
+      <div class="pro3_1">현재 성취도</div>
+      <ul>
+        <li>html5 80</li>
+        <li>css3 70</li>
+        <li>angular 30</li>
+        <li>mySQL 50</li>
+      </ul>
+    </div>
+  </div>
 </div>

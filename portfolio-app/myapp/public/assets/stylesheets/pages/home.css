@@ -2,16 +2,24 @@
 body {
     margin: 0;
     padding: 0;
-    background: #333;
     overflow: hidden;
+}
+#home-wrap {
+  position: relative;;
+  background-color: #F89973;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
 }
 
 /*ul wrapper*/
 #iSlider-wrapper {
-    height: 100%;
-    width: 100%;
     overflow: hidden;
     position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
 }
 
 #iSlider-wrapper ul {

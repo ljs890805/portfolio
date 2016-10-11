@@ -3,13 +3,23 @@
   <script id="show-code">
       var list = [
 
-          // fragment
+          {
+              content: (function () {
+                  var homeProfile = document.createDocumentFragment();
+                  var img = new Image()
+                  var dom = document.createElement('div');
+                  dom.innerHTML = 'Profile';
+                  dom.style.cssText = 'font-size:3em;color:rgb(230, 63, 230);';
+                  homeProfile.appendChild(dom);
+                  return homeProfile;
+              })()
+          },
           {
               content: (function () {
                   var frag = document.createDocumentFragment();
                   var img = new Image()
                   var dom = document.createElement('div');
-                  dom.innerHTML = 'Fragment';
+                  dom.innerHTML = 'Resume';
                   dom.style.cssText = 'font-size:3em;color:rgb(230, 63, 230);';
                   frag.appendChild(dom);
                   return frag;
@@ -20,18 +30,7 @@
                   var frag = document.createDocumentFragment();
                   var img = new Image()
                   var dom = document.createElement('div');
-                  dom.innerHTML = 'Fragment';
-                  dom.style.cssText = 'font-size:3em;color:rgb(230, 63, 230);';
-                  frag.appendChild(dom);
-                  return frag;
-              })()
-          },
-          {
-              content: (function () {
-                  var frag = document.createDocumentFragment();
-                  var img = new Image()
-                  var dom = document.createElement('div');
-                  dom.innerHTML = 'Fragment';
+                  dom.innerHTML = 'Sample';
                   dom.style.cssText = 'font-size:3em;color:rgb(230, 63, 230);';
                   frag.appendChild(dom);
                   return frag;
