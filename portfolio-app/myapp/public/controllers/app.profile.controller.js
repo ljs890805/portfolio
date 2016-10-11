@@ -16,18 +16,18 @@
 
         function pro1_function () {
           vm.pro1_check_value = !vm.pro1_check_value;
-          vm.pro2_check_value = true;
-          vm.pro3_check_value = true;
+          vm.pro2_check_value = false;
+          vm.pro3_check_value = false;
         }
         function pro2_function () {
           vm.pro2_check_value = !vm.pro2_check_value;
-          vm.pro1_check_value = true;
-          vm.pro3_check_value = true;
+          vm.pro1_check_value = false;
+          vm.pro3_check_value = false;
         }
         function pro3_function () {
           vm.pro3_check_value = !vm.pro3_check_value;
-          vm.pro1_check_value = true;
-          vm.pro2_check_value = true;
+          vm.pro1_check_value = false;
+          vm.pro2_check_value = false;
         }
 
     }

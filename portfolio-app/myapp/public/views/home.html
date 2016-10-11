@@ -6,10 +6,10 @@
           {
               content: (function () {
                   var homeProfile = document.createDocumentFragment();
-                  var img = new Image()
                   var dom = document.createElement('div');
                   dom.innerHTML = 'Profile';
-                  dom.style.cssText = 'font-size:3em;color:rgb(230, 63, 230);';
+                  dom.setAttribute("data-ng-click", "vm.goProfile()");
+                  dom.style.cssText = 'font-size:3em; color:rgb(230, 63, 230);';
                   homeProfile.appendChild(dom);
                   return homeProfile;
               })()
@@ -17,10 +17,10 @@
           {
               content: (function () {
                   var frag = document.createDocumentFragment();
-                  var img = new Image()
                   var dom = document.createElement('div');
                   dom.innerHTML = 'Resume';
-                  dom.style.cssText = 'font-size:3em;color:rgb(230, 63, 230);';
+                  dom.setAttribute("data-ng-click", "vm.goResume()");
+                  dom.style.cssText = 'font-size:3em; color:rgb(230, 63, 230);';
                   frag.appendChild(dom);
                   return frag;
               })()
@@ -28,10 +28,10 @@
           {
               content: (function () {
                   var frag = document.createDocumentFragment();
-                  var img = new Image()
                   var dom = document.createElement('div');
                   dom.innerHTML = 'Sample';
-                  dom.style.cssText = 'font-size:3em;color:rgb(230, 63, 230);';
+                  dom.setAttribute("data-ng-click", "vm.goSample()");
+                  dom.style.cssText = 'font-size:3em; color:rgb(230, 63, 230);';
                   frag.appendChild(dom);
                   return frag;
               })()
@@ -41,9 +41,9 @@
       var S = new iSlider({
           dom: document.getElementById('iSlider-wrapper'),
           data: list,
-          isAutoplay: 1,
-          isLooping: 1,
-          isOverspread: 1,
+          isAutoplay: true,
+          isLooping: true,
+          isOverspread: true,
           animateTime: 800,
           isVertical: true
       });

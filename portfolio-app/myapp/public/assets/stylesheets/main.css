@@ -30,10 +30,10 @@ ul,li {
   text-align: center;
   color: #999;
   font-weight: bold;
+  transition: 1s all;
 }
 
 .mainNav .menuOnOff:hover {
-  transition: 1s all;
   color: #000;
 }
 
@@ -85,9 +85,18 @@ ul,li {
   vertical-align: middle;
 }
 .sg-home .homeBtn {
+  position: relative;
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
   font-weight: bold;
   color: #999;
   cursor: pointer;
+  background-color: white;
+  text-decoration: none;
+  outline: none;
 }
 .sg-home .homeBtn:hover {
   transition: 1s all;

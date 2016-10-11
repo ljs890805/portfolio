@@ -18,14 +18,21 @@
   </div>
   <div class="menuOff" data-ng-class="{'menuOn': vm.some_check_value}">
     <ul>
-      <li><span data-ng-click="vm.goProfile()">자기소개</span></li>
-      <li><span data-ng-click="vm.goResume()">이력서</span></li>
-      <li><span data-ng-click="vm.goSample()">연습작</span></li>
+      <li><span data-ng-click="vm.goProfile(true)">자기소개</span></li>
+      <li><span data-ng-click="vm.goResume(true)">이력서</span></li>
+      <li><span data-ng-click="vm.goSample(true)">연습작</span></li>
     </ul>
   </div>
-  <div class="sg-home"><p class="homeBtn" data-ng-click="vm.goHome()">HOME</p></div>
+  <div class="sg-home">
+      <button class="homeBtn"
+         data-ng-click="vm.goHome()">
+          HOME
+      </button>
+  </div>
 	<div ui-view class="mainView"></div>
-  <div class="myGit"><a href="https://github.com/ljs890805/">MYGIT</a></div>
+  <div class="myGit">
+      <a href="https://github.com/ljs890805/" target="_blank">MYGIT</a>
+  </div>
 </div>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>

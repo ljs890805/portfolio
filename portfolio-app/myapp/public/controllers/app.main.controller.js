@@ -15,21 +15,22 @@
 
         function goHome () {
             appNavigator.goToHome();
+            vm.some_check_value = false;
         }
 
-        function goProfile () {
+        function goProfile (changeState) {
             appNavigator.goTo("profile");
-            vm.some_check_value = !vm.some_check_value;
+            if (changeState) vm.some_check_value = !vm.some_check_value;
         }
 
-        function goResume () {
+        function goResume (changeState) {
             appNavigator.goTo("resume");
-            vm.some_check_value = !vm.some_check_value;
+            if (changeState) vm.some_check_value = !vm.some_check_value;
         }
 
-        function goSample () {
+        function goSample (changeState) {
             appNavigator.goTo("sample");
-            vm.some_check_value = !vm.some_check_value;
+            if (changeState) vm.some_check_value = !vm.some_check_value;
         }
 
         function some_function () {

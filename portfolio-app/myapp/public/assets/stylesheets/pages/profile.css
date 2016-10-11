@@ -26,14 +26,39 @@
   height: 100%;
   background-color: #A9F5F2;
   z-index: 3;
+  overflow: hidden;
 }
 #profile-wrap ul li {
+  position: relative;
   display: block;
+  margin: 10%;
+  padding-top: 80%;
   width: 80%;
-  height: 33.3%;
   border-radius: 100%;
   cursor: pointer;
   background-color: #D2FCD0;
+}
+
+#profile-wrap ul li button {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+#profile-wrap ul li button.no-cursor {
+  cursor: initial;
+}
+
+#profile-wrap ul li button.no-cursor:hover {
+
 }
 
 .rightBox {
@@ -45,7 +70,10 @@
   background-color: #A9F5F2;
   z-index: 1;
 }
-.rightBox div {
+.rightBox > div {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #A9F5F2;
