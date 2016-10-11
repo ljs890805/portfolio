@@ -17,7 +17,7 @@ ul,li {
   left: 0;
   width: 5%;
   height: 100%;
-  z-index: 3;
+  z-index: 10;
 }
 
 .mainNav .menuOnOff {
@@ -37,7 +37,7 @@ ul,li {
 }
 
 .menuOff {
-  display: none;
+  display: block;
   position: absolute;
   top: 8%;
   left: -85%;
@@ -45,6 +45,9 @@ ul,li {
   height: 80%;
   background-color: gray;
   text-align: center;
+  transition: .4s all ease;
+  transform: translateX(0);
+  z-index: 4;
 }
 .menuOff ul {
   display: block;
@@ -67,13 +70,7 @@ ul,li {
   color: #000;
 }
 .menuOn {
-  display: block;
-  position: absolute;
-  top: 8%;
-  left: -85%;
-  transition: 5s all ease;
   transform: translateX(100%);
-  z-index: 4;
 }
 
 
