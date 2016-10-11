@@ -31,34 +31,22 @@
 #profile-wrap ul li {
   position: relative;
   display: block;
-  margin: 10%;
-  padding-top: 80%;
-  width: 80%;
-  border-radius: 100%;
-  cursor: pointer;
-  background-color: #D2FCD0;
+  width: 100%;
+  height: 33.3%;
 }
 
 #profile-wrap ul li button {
   position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
+  top: 10%;
+  left: 20%;
   border: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-  background-color: transparent;
+  width: 60%;
+  height: 80%;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: #D2FCD0;
   outline: none;
   cursor: pointer;
-}
-
-#profile-wrap ul li button.no-cursor {
-  cursor: initial;
-}
-
-#profile-wrap ul li button.no-cursor:hover {
-
 }
 
 .rightBox {
@@ -78,6 +66,117 @@
   height: 100%;
   background-color: #A9F5F2;
 }
+.pro1 div {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  left: 10%;
+  top: 10%;
+  background-image: url(/assets/images/mypic.jpg);
+  background-size: cover;
+}
+.pro1 p {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: 30px;
+  line-height: 2em;
+}
+
+.pro2 p {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 30px;
+  line-height: 1.7em;
+}
+
+.pro3 .pro3_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.pro3 .pro3_2 {
+  position: relative;
+  margin-top: 20%;
+  width: 100%;
+  height: 90%;
+  font-size: 30px;
+  text-align: center;
+}
+.pro3 .pro3_2 button {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border: 0;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #D2FCD0;
+  outline: none;
+  cursor: pointer;
+}
+.pro3 .pro3Btn1 {
+  background-image: url(/assets/images/html.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 0 rgba(15,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
+  transition: 1s all ease;
+}
+.pro3 .pro3Btn1:hover {
+  box-shadow: inset 0 0 0 100px rgba(15,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.8),	0 1px 2px rgba(0,0,0,0.1);
+}
+.pro3 .pro3Btn2 {
+  background-image: url(/assets/images/css.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 0 rgba(15,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
+  transition: 1s all ease;
+}
+.pro3 .pro3Btn2:hover {
+  box-shadow: inset 0 0 0 100px rgba(15,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.8),	0 1px 2px rgba(0,0,0,0.1);
+}
+.pro3 .pro3Btn3 {
+  background-image: url(/assets/images/javascript.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 0 rgba(15,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
+  transition: 1s all ease;
+}
+.pro3 .pro3Btn3:hover {
+  box-shadow: inset 0 0 0 100px rgba(15,145,87, 0.6), inset 0 0 0 16px rgba(255,255,255,0.9),	0 1px 2px rgba(0,0,0,0.1);
+}
+.pro3 .pro3Btn4 {
+  background-image: url(/assets/images/jquery.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 0 rgba(15,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
+  transition: 1s all ease;
+}
+.pro3 .pro3Btn4:hover {
+  box-shadow: inset 0 0 0 100px rgba(15,145,87, 0.6), inset 0 0 0 16px rgba(255,255,255,0.9),	0 1px 2px rgba(0,0,0,0.1);
+}
+.pro3 .pro3Btn5 {
+  background-image: url(/assets/images/mysql.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 0 rgba(15,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
+  transition: 1s all ease;
+}
+.pro3 .pro3Btn5:hover {
+  box-shadow: inset 0 0 0 100px rgba(15,145,87, 0.8), inset 0 0 0 16px rgba(255,255,255,0.9),	0 1px 2px rgba(0,0,0,0.1);
+}
+.pro3 .pro3Btn6 {
+  background-image: url(/assets/images/angular.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 0 rgba(255,145,87, 0.4), inset 0 0 0 16px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
+  transition: 1s all ease;
+}
+.pro3 .pro3Btn6:hover {
+  box-shadow: inset 0 0 0 100px rgba(255,60,87, 0.9), inset 0 0 0 16px rgba(255,255,255,0.8),	0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* animation */
 .pro1 {
   transition: 1s all ease;
   transform: translateX(-100%);
