@@ -7,6 +7,11 @@
     function ResumeCtrl ($scope) {
         var vm = $scope.vm;
 
+        vm.resumeDown = resumeDown;
 
+        function resumeDown() {
+          console.log(12);
+          window.open("/assets/images/resume.pdf", "_black");
+        }
     }
 })();

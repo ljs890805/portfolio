@@ -1,0 +1,25 @@
+@charset "utf-8";
+html,body,h1{ margin: 0; padding: 0;}
+
+#wrap { height: 800px; background-color: #14181f; overflow: hidden;position: relative;}
+#logo { display: block; height: 30px; line-height: 30px;color: #fff; text-decoration: none; position: absolute; left: 50px; top: 30px; background:url(demo/images/footer-logo.png) no-repeat;padding-left: 40px;}
+#title h1 { position: absolute; right: 80px; top: 150px; color: #fff;animation: tle 2s; }
+
+#ani1 { position: absolute; top: 200px; left:30%; animation: ani1 6s;animation-delay: 3s;opacity: 0; }
+#ani2 {position: absolute; top:200px; animation: ani2 2s; opacity:0;animation-delay:9s; animation-fill-mode: forwards; }
+
+@keyframes ani1{
+	from{ left: 100%; opacity: 0.5;}
+	40% {left: 30%; opacity: 1;}
+	70% {left: 30%; opacity: 1;}
+	to{ left: -100%; opacity: 0;}
+}
+@keyframes ani2{
+	from{ left: 0%; top: 50px; opacity: 0; }
+	to{ left: 15%; top: 200px;opacity: 1; }
+}
+
+@keyframes tle{
+	from{top:-800px; transform: scale(0.5);}
+	to {top: 150px;transform: scale(1);}
+}
