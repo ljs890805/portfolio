@@ -1,13 +1,13 @@
 <div id="profile-wrap" data-ng-controller="ProfileCtrl">
   <ul>
     <li data-ng-click="vm.pro1_function()">
-        <button>기본인적사항</button>
+        <button data-ng-class="{'pro1BtnOn': vm.pro1_check_value}">기본인적사항</button>
     </li>
     <li data-ng-click="vm.pro2_function()">
-        <button>자기소개</button>
+        <button data-ng-class="{'pro2BtnOn': vm.pro2_check_value}">자기소개</button>
     </li>
     <li data-ng-click="vm.pro3_function()">
-        <button>성취도</button>
+        <button data-ng-class="{'pro3BtnOn': vm.pro3_check_value}">성취도</button>
     </li>
   </ul>
   <div class="rightBox">
