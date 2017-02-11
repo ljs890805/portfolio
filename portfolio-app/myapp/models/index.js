@@ -1,7 +1,7 @@
 var test = require('./test');
 
 var models = {
-  test = test;
+  test: test
 };
 
 
