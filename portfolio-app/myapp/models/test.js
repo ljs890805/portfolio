@@ -6,6 +6,14 @@ module.exports = {
         'test': {
             'type': Sequelize.STRING,
             'allowNull': false
+        },
+        'testInteger': {
+            'type': Sequelize.INTEGER,
+            'allowNull': false
+        },
+        'testBoolean': {
+            'type': Sequelize.BOOLEAN,
+            'allowNull': false
         }
     },
     options: {

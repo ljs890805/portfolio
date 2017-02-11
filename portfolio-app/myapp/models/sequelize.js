@@ -2,8 +2,8 @@ var Sequelize = require('sequelize');
 require('sequelize-definer')(Sequelize);
 
 var db = 'LJS';
-var username = 'slogup';
-var password = '123123';
+var username = 'root';
+var password = 'a159736';
 var connectObject = {
     host: 'localhost',
     dialect: "mysql",
@@ -15,11 +15,6 @@ var connectObject = {
         charset: 'utf8',
         collate: 'utf8_general_ci',
         timestamps: true
-    },
-    dialectOptions: {
-        socketPath: '/tmp/mysql.sock',
-        supportBigNumbers: true,
-        bigNumberStrings: true
     },
     logging: false
 };
