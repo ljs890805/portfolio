@@ -4,8 +4,24 @@
 
     angular.module(moduleName).controller("MainCtrl", MainCtrl);
 
-    function MainCtrl($scope, appNavigator) {
+    function MainCtrl($scope, appNavigator, loginHistoryManager, testManager) {
         var vm = $scope.vm = {};
+
+        loginHistoryManager.postLoginHistory(function (status, data) {
+            if (status == 204) {
+                console.log("success");
+            } else {
+                console.log(status, data);
+            }
+        });
+
+        testManager.getTests(function (status, data) {
+            if (status == 200) {
+                console.log(data);
+            } else {
+                console.log(status, data);
+            }
+        });
 
         vm.goHome = goHome;
         vm.goProfile = goProfile;

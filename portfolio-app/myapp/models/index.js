@@ -1,7 +1,9 @@
 var test = require('./test');
+var loginHistory = require('./login-history');
 
 var models = {
-  test: test
+  test: test,
+  loginHistory: loginHistory
 };
 
 

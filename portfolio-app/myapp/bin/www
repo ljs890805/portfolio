@@ -15,12 +15,7 @@ var portNumber = "3001";
 var port = normalizePort(process.env.PORT || portNumber);
 app.set('port', port);
 
-var models = require('../models/models');
 var sequelize = require('../models/sequelize');
-app.use(function (req, res, next){
-  req.models = models;
-  req.sequelize = sequelize;
-});
 
 var server = null;
 

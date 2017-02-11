@@ -5,8 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var apis = require('./apis');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -25,6 +23,21 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+var utils = require('./utils');
+app = utils(app);
+
+var models = require('./models/models');
+var sequelize = require('./models/sequelize');
+
+app.use(function (req, res, next){
+  req.models = models;
+  req.sequelize = sequelize;
+  next();
+});
+
+var apis = require('./apis');
+app = apis(app);
 
 app.use('/', routes);
 app.use('/users', users);
