@@ -1,4 +1,7 @@
 var path = require('path');
+/**
+ * resource는 자신의 파일명이 담긴다.
+ */
 var resource = fileName = path.basename(__filename).split('.')[0];
 var express = require('express');
 var router = new express.Router();

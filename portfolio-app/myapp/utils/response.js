@@ -11,6 +11,7 @@ var response = function(req, next, status, body) {
 
 module.exports.connect = function () {
     return function (req, res, next) {
+        console.log("define util response part");
         res.response = response;
         next();
     };

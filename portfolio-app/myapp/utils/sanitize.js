@@ -13,6 +13,7 @@ function toBoolean (object, field) {
 
 module.exports = function () {
     return function (req, res, next) {
+        console.log("define util sanitize part");
         req.sanitize = sanitize;
         next();
     };

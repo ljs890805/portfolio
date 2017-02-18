@@ -6,6 +6,7 @@ function getIp () {
 
 module.exports = function () {
     return function (req, res, next) {
+        console.log("define util get request ip part");
         req.getIp = getIp;
         next();
     };
